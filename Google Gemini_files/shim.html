@@ -1,0 +1,1571 @@
+<!DOCTYPE html>
+<!-- saved from url=(0132)blob:https://1jaf8gnpciaruw5lbv6xe20qvfdd3jb11m0qxzumani0jxz3fs-h864888888.scf.usercontent.goog/4b5a5d7a-87cd-4508-8e5e-2e3e9cf23196 -->
+<html lang="zh-TW"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>(function(firebaseConfig, initialAuthToken, appId) {
+        window.__firebase_config = firebaseConfig;
+        window.__initial_auth_token = initialAuthToken;
+        window.__app_id = appId;
+            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6IjY0ZjA3ZDcxOTc5ZjQzODI3MjJhOGRmMzQwNzUzY2UwZmVkOThjYTgiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIxNzAxNDM3MzQ3NzQ3NTM5NDY4OCIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiJjX2E4MzNjMzhjMmQ5ODY4MTlfM0FfR2xvYmFsX0lubm92YXRpb25fTGFiX1NQQS5odG1sLTE0MyJ9LCJleHAiOjE3NzExMzgwOTksImlhdCI6MTc3MTEzNDQ5OSwiYWxnIjoiUlMyNTYifQ.RKZaK6Um6xeDryk4d0IMoDN3dLIQEblDPQmRruipGqHDCm0WYZDMQL_Is32yHM24JYEqk1dBNV3xe_sMky1sMK7hIfoOBeCQPyuBgj7tETJNgX-WZljKqI9d336W9R3TOJZr5aTgDOMBpfOF2Hh3jaC-qiRY_4uNu0l-IJ4f2gDTptIvndghlDVWaFv-QXIrFCk9ecrVQ6zmxMykp4ONWlFRObgKYXCi0ylcI2lkIwDoH2iMdtiV72aLWDy1aZVtnwlseuvqtV-5ho2DjT2JjNjk9NjYsulTMv9c57houyGRb7w5MMHCQS8sY6KSSoxO4eoJzTxrYVx8TJd2nqjdvw","c_a833c38c2d986819_3A_Global_Innovation_Lab_SPA.html-143")</script><script>'use strict';var h=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,d){if(a==Array.prototype||a==Object.prototype)return a;a[b]=d.value;return a};function l(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var d=a[b];if(d&&d.Math==Math)return d}throw Error("Cannot find global object");}var n=l(this);
+function p(a,b){if(b)a:{var d=n;a=a.split(".");for(var c=0;c<a.length-1;c++){var e=a[c];if(!(e in d))break a;d=d[e]}a=a[a.length-1];c=d[a];b=b(c);b!=c&&b!=null&&h(d,a,{configurable:!0,writable:!0,value:b})}}function r(a){function b(c){return a.next(c)}function d(c){return a.throw(c)}return new Promise(function(c,e){function f(g){g.done?c(g.value):Promise.resolve(g.value).then(b,d).then(f,e)}f(a.next())})}function t(a){return r(a())}
+p("Object.values",function(a){return a?a:function(b){var d=[],c;for(c in b)Object.prototype.hasOwnProperty.call(b,c)&&d.push(b[c]);return d}});p("Array.prototype.includes",function(a){return a?a:function(b,d){var c=this;c instanceof String&&(c=String(c));var e=c.length;d=d||0;for(d<0&&(d=Math.max(d+e,0));d<e;d++){var f=c[d];if(f===b||Object.is(f,b))return!0}return!1}});/*
+
+ MIT License
+
+ Copyright (c) 2017-2023 W.Y.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+*/
+function u(a,b){const d=a.style;b.backgroundColor&&(d.backgroundColor=b.backgroundColor);b.width&&(d.width=`${b.width}px`);b.height&&(d.height=`${b.height}px`);const c=b.style;c!=null&&Object.keys(c).forEach(e=>{d[e]=c[e]})};var v=(()=>{let a=0;return()=>{a+=1;return`u${`0000${(Math.random()*1679616<<0).toString(36)}`.slice(-4)}${a}`}})();function w(a){const b=[];for(let d=0,c=a.length;d<c;d++)b.push(a[d]);return b}let x=null;function y(a={}){return x?x:a.l?x=a.l:x=w(window.getComputedStyle(document.documentElement))}function z(a,b){return(a=(a.ownerDocument.defaultView||window).getComputedStyle(a).getPropertyValue(b))?parseFloat(a.replace("px","")):0}
+function A(a,b={}){var d;if(!(d=b.width)){d=z(a,"border-left-width");var c=z(a,"border-right-width");d=a.clientWidth+d+c}(b=b.height)||(b=z(a,"border-top-width"),c=z(a,"border-bottom-width"),b=a.clientHeight+b+c);return{width:d,height:b}}function B(a){return new Promise((b,d)=>{const c=new Image;c.onload=()=>{c.decode().then(()=>{requestAnimationFrame(()=>b(c))})};c.onerror=d;c.crossOrigin="anonymous";c.decoding="async";c.src=a})}
+function C(a){return t(function*(){return Promise.resolve().then(()=>(new XMLSerializer).serializeToString(a)).then(encodeURIComponent).then(b=>`data:image/svg+xml;charset=utf-8,${b}`)})}
+function D(a,b,d){return t(function*(){const c=document.createElementNS("http://www.w3.org/2000/svg","svg"),e=document.createElementNS("http://www.w3.org/2000/svg","foreignObject");c.setAttribute("width",`${b}`);c.setAttribute("height",`${d}`);c.setAttribute("viewBox",`0 0 ${b} ${d}`);e.setAttribute("width","100%");e.setAttribute("height","100%");e.setAttribute("x","0");e.setAttribute("y","0");e.setAttribute("externalResourcesRequired","true");c.appendChild(e);e.appendChild(a);return C(c)})}
+var E=(a,b)=>{if(a instanceof b)return!0;a=Object.getPrototypeOf(a);return a===null?!1:a.constructor.name===b.name||E(a,b)};function F(a,b){return y(b).map(d=>{const c=a.getPropertyValue(d),e=a.getPropertyPriority(d);return`${d}: ${c}${e?" !important":""};`}).join(" ")}
+function G(a,b,d,c){a=window.getComputedStyle(a,d);var e=a.getPropertyValue("content");if(e!==""&&e!=="none"){var f=v();try{b.className=`${b.className} ${f}`}catch(k){return}e=document.createElement("style");var g=e.appendChild;d=`.${f}:${d}`;a.cssText?(c=a.getPropertyValue("content"),c=`${a.cssText} content: '${c.replace(/'|"/g,"")}';`):c=F(a,c);g.call(e,document.createTextNode(`${d}{${c}}`));b.appendChild(e)}};function H(a){return a.search(/^(data:)/)!==-1}function I(a,b,d){return t(function*(){const c=yield fetch(a,b);if(c.status===404)throw Error(`Resource "${c.url}" not found`);const e=yield c.blob();return new Promise((f,g)=>{const k=new FileReader;k.onerror=g;k.onloadend=()=>{try{f(d({o:c,result:k.result}))}catch(m){g(m)}};k.readAsDataURL(e)})})}const J={};function K(a,b,d){let c=a.replace(/\?.*/,"");d&&(c=a);/ttf|otf|eot|woff2?/i.test(c)&&(c=c.replace(/.*\//,""));return b?`[${b}]${c}`:c}
+function L(a,b,d){return t(function*(){const c=K(a,b,d.C);if(J[c]!=null)return J[c];d.u&&(a+=(/\?/.test(a)?"&":"?")+(new Date).getTime());let e;try{const f=yield I(a,d.i,({o:g,result:k})=>{b||(b=g.headers.get("Content-Type")||"");return k.split(/,/)[1]});e=`data:${b};base64,${f}`}catch(f){e=d.B||""}return J[c]=e})};const M={P:"application/font-woff",R:"application/font-woff",N:"application/font-truetype",v:"application/vnd.ms-fontobject",H:"image/png",F:"image/jpeg",D:"image/jpeg",A:"image/gif",M:"image/tiff",L:"image/svg+xml",O:"image/webp"};function N(a){return(a=/\.([^./]*?)$/g.exec(a))?a[1]:""};function O(a){return t(function*(){const b=a.toDataURL();return b==="data:,"?a.cloneNode(!1):B(b)})}function aa(a,b){return t(function*(){if(a.currentSrc){var d=document.createElement("canvas");const c=d.getContext("2d");d.width=a.clientWidth;d.height=a.clientHeight;c==null||c.drawImage(a,0,0,d.width,d.height);d=d.toDataURL();return B(d)}d=a.poster;d=yield L(d,M[N(d).toLowerCase()]||"",b);return B(d)})}
+function ba(a,b){return t(function*(){try{let d;if(a==null?0:(d=a.contentDocument)==null?0:d.body)return yield P(a.contentDocument.body,b,!0)}catch(d){}return a.cloneNode(!1)})}function ca(a,b){return t(function*(){return E(a,HTMLCanvasElement)?O(a):E(a,HTMLVideoElement)?aa(a,b):E(a,HTMLIFrameElement)?ba(a,b):a.cloneNode(a.tagName!=null&&a.tagName.toUpperCase()==="SVG")})}
+function da(a,b,d){return t(function*(){if(b.tagName!=null&&b.tagName.toUpperCase()==="SVG")return b;let c=[];if(a.tagName!=null&&a.tagName.toUpperCase()==="SLOT"&&a.assignedNodes)c=w(a.assignedNodes());else{let e;if(E(a,HTMLIFrameElement)&&((e=a.contentDocument)==null?0:e.body))c=w(a.contentDocument.body.childNodes);else{let f;c=w(((f=a.shadowRoot)!=null?f:a).childNodes)}}if(c.length===0||E(a,HTMLVideoElement))return b;yield c.reduce((e,f)=>e.then(()=>P(f,d)).then(g=>{g&&b.appendChild(g)}),Promise.resolve());
+return b})}function ea(a,b,d){const c=b.style;if(c){var e=window.getComputedStyle(a);e.cssText?(c.cssText=e.cssText,c.transformOrigin=e.transformOrigin):y(d).forEach(f=>{let g=e.getPropertyValue(f);f==="font-size"&&g.endsWith("px")&&(g=`${Math.floor(parseFloat(g.substring(0,g.length-2)))-.1}px`);E(a,HTMLIFrameElement)&&f==="display"&&g==="inline"&&(g="block");f==="d"&&b.getAttribute("d")&&(g=`path(${b.getAttribute("d")})`);c.setProperty(f,g,e.getPropertyPriority(f))})}}
+function fa(a,b){E(a,HTMLSelectElement)&&(b=Array.from(b.children).find(d=>a.value===d.getAttribute("value")))&&b.setAttribute("selected","")}
+function ha(a,b){return t(function*(){var d=a.querySelectorAll?a.querySelectorAll("use"):[];if(d.length===0)return a;var c={};for(var e=0;e<d.length;e++){var f=d[e].getAttribute("xlink:href");if(f){const g=document.querySelector(f);a.querySelector(f)||!g||c[f]||(c[f]=yield P(g,b,!0))}}d=Object.values(c);if(d.length){c=document.createElementNS("http://www.w3.org/1999/xhtml","svg");c.setAttribute("xmlns","http://www.w3.org/1999/xhtml");c.style.position="absolute";c.style.width="0";c.style.height="0";
+c.style.overflow="hidden";c.style.display="none";e=document.createElementNS("http://www.w3.org/1999/xhtml","defs");c.appendChild(e);for(f=0;f<d.length;f++)e.appendChild(d[f]);a.appendChild(c)}return a})}
+function P(a,b,d){return t(function*(){return d||!b.filter||b.filter(a)?Promise.resolve(a).then(c=>ca(c,b)).then(c=>da(a,c,b)).then(c=>{E(c,Element)&&(ea(a,c,b),G(a,c,":before",b),G(a,c,":after",b),E(a,HTMLTextAreaElement)&&(c.textContent=a.value),E(a,HTMLInputElement)&&c.setAttribute("value",a.value),fa(a,c));return c}).then(c=>ha(c,b)):null})};const Q=/url\((['"]?)([^'"]+?)\1\)/g,ia=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,ja=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function ka(a){const b=[];a.replace(Q,(d,c,e)=>{b.push(e);return d});return b.filter(d=>!H(d))}
+function la(a,b,d,c){return t(function*(){try{const e=d?(new URL(b,d||void 0)).toString():b;let f;f=yield L(e,M[N(b).toLowerCase()]||"",c);return a.replace(new RegExp(`(url\\(['"]?)(${b.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1")})(['"]?\\))`,"g"),`$1${f}$3`)}catch(e){}return a})}function ma(a,{I:b}){return b?a.replace(ja,d=>{for(;;){const [c,,e]=ia.exec(d)||[],f=c,g=e;if(!g)return"";if(g===b)return`src: ${f};`}}):a}
+function R(a,b,d){return t(function*(){if(a.search(Q)===-1)return a;const c=ma(a,d);return ka(c).reduce((e,f)=>e.then(g=>la(g,f,b,d)),Promise.resolve(c))})};function S(a,b,d){return t(function*(){var c;const e=(c=b.style)==null?void 0:c.getPropertyValue(a);return e?(c=yield R(e,null,d),b.style.setProperty(a,c,b.style.getPropertyPriority(a)),!0):!1})}function na(a,b){return t(function*(){(yield S("background",a,b))||(yield S("background-image",a,b));(yield S("mask",a,b))||(yield S("-webkit-mask",a,b))||(yield S("mask-image",a,b))||(yield S("-webkit-mask-image",a,b))})}
+function oa(a,b){return t(function*(){const d=E(a,HTMLImageElement);if(d&&!H(a.src)||E(a,SVGImageElement)&&!H(a.href.baseVal)){var c=d?a.src:a.href.baseVal,e=yield L(c,M[N(c).toLowerCase()]||"",b);yield new Promise((f,g)=>{a.onload=f;a.onerror=b.m?(...k)=>{try{f(b.m(...k))}catch(m){g(m)}}:g;a.decode&&(a.decode=f);a.loading==="lazy"&&(a.loading="eager");d?(a.srcset="",a.src=e):a.href.baseVal=e})}})}
+function pa(a,b){return t(function*(){const d=w(a.childNodes).map(c=>T(c,b));yield Promise.all(d).then(()=>a)})}function T(a,b){return t(function*(){E(a,Element)&&(yield na(a,b),yield oa(a,b),yield pa(a,b))})};const U={};function V(a){return t(function*(){var b=U[a];if(b!=null)return b;b=yield(yield fetch(a)).text();b={url:a,cssText:b};return U[a]=b})}function W(a,b){return t(function*(){let d=a.cssText;const c=/url\(["']?([^"')]+)["']?\)/g,e=(d.match(/url\([^)]+\)/g)||[]).map(f=>t(function*(){let g=f.replace(c,"$1");g.startsWith("https://")||(g=(new URL(g,a.url)).href);return I(g,b.i,({result:k})=>{d=d.replace(f,`url(${k})`);return[f,k]})}));return Promise.all(e).then(()=>d)})}
+function X(a){if(a==null)return[];const b=[];a=a.replace(/(\/\*[\s\S]*?\*\/)/gi,"");for(var d=RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){var c=d.exec(a);if(c===null)break;b.push(c[0])}a=a.replace(d,"");d=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;for(c=RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){let e=d.exec(a);if(e===null)if(e=c.exec(a),e===null)break;else d.lastIndex=c.lastIndex;else c.lastIndex=
+d.lastIndex;b.push(e[0])}return b}
+function qa(a,b){return t(function*(){const d=[],c=[];a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach((f,g)=>{if(f.type===CSSRule.IMPORT_RULE){let k=g+1;f=V(f.href).then(m=>W(m,b)).then(m=>X(m).forEach(q=>{try{e.insertRule(q,q.startsWith("@import")?k+=1:e.cssRules.length)}catch(Da){}})).catch(()=>{});c.push(f)}})}catch(f){const g=a.find(k=>k.href==null)||document.styleSheets[0];e.href!=null&&c.push(V(e.href).then(k=>W(k,b)).then(k=>X(k).forEach(m=>{g.insertRule(m,g.cssRules.length)})).catch(()=>
+{}))}});return Promise.all(c).then(()=>{a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach(f=>{d.push(f)})}catch(f){}});return d})})}function ra(a){return a.filter(b=>b.type===CSSRule.FONT_FACE_RULE).filter(b=>b.style.getPropertyValue("src").search(Q)!==-1)}function sa(a,b){return t(function*(){if(a.ownerDocument==null)throw Error("Provided element is not within a Document");var d=w(a.ownerDocument.styleSheets);d=yield qa(d,b);return ra(d)})}
+function ta(a){function b(c){(c.style.fontFamily||getComputedStyle(c).fontFamily).split(",").forEach(e=>{d.add(e.trim().replace(/["']/g,""))});Array.from(c.children).forEach(e=>{e instanceof HTMLElement&&b(e)})}const d=new Set;b(a);return d}function ua(a,b){return t(function*(){const d=yield sa(a,b),c=ta(a);return(yield Promise.all(d.filter(e=>c.has(e.style.fontFamily.trim().replace(/["']/g,""))).map(e=>R(e.cssText,e.parentStyleSheet?e.parentStyleSheet.href:null,b)))).join("\n")})}
+function va(a,b){return t(function*(){const d=b.j!=null?b.j:b.K?null:yield ua(a,b);if(d){const c=document.createElement("style");c.appendChild(document.createTextNode(d));a.firstChild?a.insertBefore(c,a.firstChild):a.appendChild(c)}})};function wa(a,b={}){return t(function*(){const {width:d,height:c}=A(a,b),e=yield P(a,b,!0);yield va(e,b);yield T(e,b);u(e,b);return yield D(e,d,c)})}
+function xa(a,b={}){return t(function*(){const {width:d,height:c}=A(a,b);var e=yield wa(a,b);e=yield B(e);const f=document.createElement("canvas"),g=f.getContext("2d"),k=b.G||window.devicePixelRatio||1,m=b.h||d,q=b.g||c;f.width=m*k;f.height=q*k;!b.J&&(f.width>16384||f.height>16384)&&(f.width>16384&&f.height>16384?f.width>f.height?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384):f.width>16384?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=
+16384));f.style.width=`${m}`;f.style.height=`${q}`;b.backgroundColor&&(g.fillStyle=b.backgroundColor,g.fillRect(0,0,f.width,f.height));g.drawImage(e,0,0,f.width,f.height);return f})}function ya(a,b={}){return t(function*(){return(yield xa(a,b)).toDataURL()})};const za=["gemini.google.com","corp.google.com","proxy.googlers.com"];function Y(){return document.body.querySelectorAll('[class*="animate"]').length>0}function Z(a){return t(function*(){try{return yield ya(a,{h:a.offsetWidth,g:a.offsetHeight})}catch(d){var b=a.offsetHeight;const c=document.createElement("canvas");c.width=a.offsetWidth;c.height=b;return c.toDataURL("image/png")}})}
+function Aa(){return t(function*(){const a=document.body.offsetWidth,b=document.body.offsetHeight,d=document.body.cloneNode(!0);d.querySelectorAll('[class*="animate"]').forEach(c=>{c.classList.remove(...Array.from(c.classList).filter(e=>e.startsWith("animate")))});d.style.width=`${a}px`;d.style.height=`${b}px`;return d})}
+function Ba(a){return t(function*(){let b=document.body;if(Y()){var d=yield Aa();b=d;document.body.appendChild(d)}d=yield Z(b);Y()&&document.body.removeChild(b);window.parent.postMessage({type:"SEND_SCREENSHOT",image:d,topOffset:document.documentElement.scrollTop},a.origin)})}function Ca(a){return t(function*(){const b={type:"SEND_SCREENSHOT_FOR_DATA_VISUALIZATION",image:yield Z(document.body),topOffset:0};window.parent.postMessage(b,a.origin)})}
+window.addEventListener("message",a=>t(function*(){if(za.some(d=>a.origin.includes(d))){var b=a.data;b&&(b.type==="MAKE_SCREENSHOT"&&(yield Ba(a)),b.type==="MAKE_SCREENSHOT_FOR_DATA_VISUALIZATION"&&(yield Ca(a)))}}));
+</script><script>(function() {
+  // Ensure this script is executed only once
+  if (window.firebaseAuthBridgeScriptLoaded) {
+    return;
+  }
+  window.firebaseAuthBridgeScriptLoaded = true;
+
+  let nextTokenPromiseId = 0;
+
+  // Stores { resolve, reject } for ongoing token requests
+  const pendingTokenPromises = {};
+
+  // Listen for messages from the Host Application
+  window.addEventListener('message', function(event) {
+
+    const messageData = event.data;
+
+  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
+      const { success, token, error, promiseId } = messageData ?? {};
+      if (pendingTokenPromises[promiseId]) {
+        if (success) {
+          pendingTokenPromises[promiseId].resolve(token);
+        } else {
+          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
+        }
+        delete pendingTokenPromises[promiseId];
+      }
+    }
+  });
+
+  // Expose a function for the Generated App to request a new Firebase token
+  window.requestNewFirebaseToken = function() {
+    const currentPromiseId = nextTokenPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingTokenPromises[currentPromiseId] = { resolve, reject };
+    });
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'REQUEST_NEW_FIREBASE_TOKEN',
+        promiseId: currentPromiseId
+      }, '*');
+    } else {
+      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
+      delete pendingTokenPromises[currentPromiseId];
+    }
+    return promise;
+  };
+})();</script><script>
+let realOriginalGetUserMedia = null;
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+}
+
+(function() {
+  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
+    try {
+      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
+        get: function() {
+          return undefined; // Or throw an error
+        },
+        configurable: false
+      });
+    } catch (error) {
+      console.error("Error defining prototype getter:", error);
+    }
+  }
+})();
+
+(function() {
+  const pendingMediaResolvers = {};
+  let nextMediaPromiseId = 0;
+
+  function requestMediaPermissions(constraints) {
+    const mediaPromiseId = nextMediaPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingMediaResolvers[mediaPromiseId] = (granted) => {
+        delete pendingMediaResolvers[mediaPromiseId];
+        resolve(granted);
+      };
+    });
+
+    window.parent.postMessage({
+      type: 'requestMediaPermission',
+      constraints: constraints,
+      promiseId: mediaPromiseId,
+    }, '*');
+
+    return promise;
+  }
+
+  let originalGetUserMedia = realOriginalGetUserMedia;
+
+  function interceptGetUserMedia() {
+    if (navigator.mediaDevices) {
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
+        value: function(constraints) {
+          return requestMediaPermissions(constraints).then((granted) => {
+            if (granted) {
+              if (originalGetUserMedia) {
+                return originalGetUserMedia(constraints);
+              } else {
+                throw new Error("Original getUserMedia not available.");
+              }
+            } else {
+              throw new DOMException('Permission denied', 'NotAllowedError');
+            }
+          });
+        },
+        writable: false,
+        configurable: false
+      });
+    }
+  }
+
+  interceptGetUserMedia();
+
+  const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'childList' && mutation.addedNodes) {
+        mutation.addedNodes.forEach(node => {
+          if (node === navigator.mediaDevices) {
+            interceptGetUserMedia();
+          }
+        });
+      }
+    }
+  });
+
+  function interceptSpeechRecognition() {
+    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+      return;
+    }
+
+    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const SpeechRecognitionWrapper = function(...args) {
+      const recognizer = new OriginalSpeechRecognition(...args);
+      const originalStart = recognizer.start.bind(recognizer);
+
+      recognizer.start = function() {
+        requestMediaPermissions({ audio: true }).then(granted => {
+          if (granted) {
+            originalStart();
+          } else {
+            const errorEvent = new SpeechRecognitionErrorEvent('error');
+            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
+            recognizer.dispatchEvent(errorEvent);
+          }
+        });
+      };
+
+      return recognizer;
+    };
+
+    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
+    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
+
+    if (window.SpeechRecognition) {
+      window.SpeechRecognition = SpeechRecognitionWrapper;
+    }
+    if (window.webkitSpeechRecognition) {
+      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
+    }
+  }
+
+  interceptSpeechRecognition();
+
+  window.addEventListener('message', function(event) {
+    if (event.data) {
+      if (event.data.type === 'resolveMediaPermission') {
+        const { promiseId, granted } = event.data;
+        if (pendingMediaResolvers[promiseId]) {
+          pendingMediaResolvers[promiseId](granted);
+        }
+      }
+    }
+  });
+
+})();</script><script>((function(modelInformation) {
+  const originalFetch = window.fetch;
+  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
+  let googleLlmBaseApiUrls = [
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageTransformModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
+  ];
+  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+    );
+  });
+  modelInformation.deprecatedImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predict',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predictLongRunning',
+    );
+  });
+
+  const pendingFetchResolvers = {};
+  let nextPromiseId = 0;
+
+  function handleStringInput(input, optionsArgument) {
+    const actualUrl = input;
+    const fetchCallArgs = [actualUrl, optionsArgument];
+    const effectiveOptions = optionsArgument || {};
+    const bodyForApiKeyCheck = effectiveOptions.body;
+    const bodyForPostMessage = effectiveOptions.body;
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  function handleRequestInput(input, optionsArgument) {
+    const actualUrl = input.url;
+    const fetchCallArgs = [input, optionsArgument];
+    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (optionsArgument) {
+      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
+      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
+      if ('body' in optionsArgument) {
+        bodyForApiKeyCheck = optionsArgument.body;
+        bodyForPostMessage = optionsArgument.body;
+      } else {
+        bodyForApiKeyCheck = undefined;
+        bodyForPostMessage = input.body;
+      }
+    } else {
+      bodyForApiKeyCheck = undefined;
+      bodyForPostMessage = input.body;
+    }
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  window.fetch = function(input, optionsArgument) {
+    let actualUrl;
+    let fetchCallArgs;
+    let effectiveOptions = {};
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (typeof input === 'string') {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
+    } else if (input instanceof Request) {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
+    } else {
+      return originalFetch.apply(window, [input, optionsArgument]);
+    }
+
+    effectiveOptions.method = effectiveOptions.method || 'GET';
+    if (!effectiveOptions.headers) {
+      effectiveOptions.headers = new Headers();
+    }
+
+
+    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
+      let apiKeyIsNull = true;
+
+      const regex = new RegExp("models/([^:]+)");
+      const modelNameMatch = actualUrl.match(regex);
+      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
+
+
+      try {
+        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
+        const apiKeyParam = urlObject.searchParams.get('key');
+        if (apiKeyParam) {
+          apiKeyIsNull = false;
+        }
+      } catch (e) {
+        // Continue checks even if URL parsing fails
+      }
+
+      if (apiKeyIsNull && effectiveOptions.headers) {
+        const h = new Headers(effectiveOptions.headers);
+        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
+        if (apiKeyHeaderValue) {
+          apiKeyIsNull = false;
+          return originalFetch.apply(window, fetchCallArgs);
+        }
+      }
+
+      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
+        try {
+          const bodyData = JSON.parse(bodyForApiKeyCheck);
+          if (bodyData && bodyData.apiKey) {
+            apiKeyIsNull = false;
+            return originalFetch.apply(window, fetchCallArgs);
+          }
+        } catch (e) {
+          // Ignore JSON parsing errors
+        }
+      }
+
+      if(apiKeyIsNull) {
+        const promiseId = nextPromiseId++;
+        const promise = new Promise((resolve) => {
+          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
+            delete pendingFetchResolvers[promiseId];
+            resolve(resolvedResponse);
+          };
+        });
+
+        let serializedBodyForPostMessage;
+        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
+            serializedBodyForPostMessage = bodyForPostMessage;
+        } else if (bodyForPostMessage instanceof ReadableStream) {
+            serializedBodyForPostMessage = null;
+        } else {
+            try {
+                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
+            } catch (e) {
+                serializedBodyForPostMessage = null;
+            }
+        }
+
+        const messageOptions = {
+            method: effectiveOptions.method,
+            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
+            body: serializedBodyForPostMessage
+        };
+
+        window.parent.postMessage({
+          type: 'requestFetch',
+          url: actualUrl,
+          modelName: modelName,
+          options: messageOptions,
+          promiseId: promiseId,
+        }, '*');
+
+        return promise;
+      }
+      return originalFetch.apply(window, fetchCallArgs);
+    }
+    return originalFetch.apply(window, fetchCallArgs);
+  };
+
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'resolveFetch') {
+      const { promiseId, response } = event.data;
+      if (pendingFetchResolvers[promiseId]) {
+        try {
+          const reconstructedResponse = new Response(response.body, {
+            status: response.status,
+            statusText: response.statusText,
+            headers: new Headers(response.headers),
+          });
+          pendingFetchResolvers[promiseId](reconstructedResponse);
+        } catch (error) {
+          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
+        }
+      }
+    }
+  });
+
+}))({"textModelName":"gemini-2.5-flash-preview-09-2025","imageModelName":"imagen-4.0-generate-001","imageEditModelName":"gemini-2.5-flash-image-preview","imageTransformModelName":"gemini-3-pro-image-preview-11-2025","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash-preview-04-17","gemini-2.5-flash-preview-05-20"],"deprecatedImageModelNames":["imagen-3.0-generate-001","imagen-3.0-generate-002"]})</script><script>(function(){'use strict';function a(){window.parent.postMessage({type:"interaction"},"*")}window.addEventListener("click",a,{capture:!0,passive:!0});window.addEventListener("touchstart",a,{capture:!0,passive:!0});window.addEventListener("keydown",a,{capture:!0,passive:!0});}).call(this);
+</script><script>(function() {
+  const originalConsoleLog = console.log;
+  const originalConsoleError = console.error;
+
+    /**
+   * Normalizes an error event or a promise rejection reason into a structured error object.
+   * @param {*} errorEventOrReason The error object or reason.
+   * @return {object} Structured error data { message, name, stack }.
+   */
+  function getErrorObject(errorEventOrReason) {
+    if (errorEventOrReason instanceof Error) {
+      return {
+        message: errorEventOrReason.message,
+        name: errorEventOrReason.name,
+        stack: errorEventOrReason.stack,
+      };
+    }
+    // Fallback for non-Error objects.
+    try {
+      return {
+        message: JSON.stringify(errorEventOrReason),
+        name: 'UnknownErrorType',
+        stack: null,
+      };
+    } catch (e) {
+      return {
+        message: String(errorEventOrReason),
+        name: 'UnknownErrorTypeNonStringifiable',
+        stack: null,
+      };
+    }
+  }
+
+  /**
+   * Converts an array of arguments (from log/error) into a single string.
+   * Handles Error objects specially to include their message and stack.
+   * @param {Array<*>} args - Arguments passed to console methods.
+   * @return {string} A string representation of the arguments.
+   */
+  function stringifyArgs(args) {
+    return args
+      .map((arg) => {
+        if (arg instanceof Error) {
+          const {message, stack} = arg;
+          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
+        }
+        if (typeof arg === 'object' && arg !== null) {
+          try {
+            return JSON.stringify(arg);
+          } catch (error) {
+            return '[Circular Object]';
+          }
+        } else {
+          return String(arg);
+        }
+      })
+      .join(' ');
+  }
+
+  console.log = function(...args) {
+    const logString = stringifyArgs(args);
+    window.parent.postMessage({ type: 'log', message: logString }, '*');
+    originalConsoleLog.apply(console, args);
+  };
+
+  console.error = function(...args) {
+    let errorData;
+    if (args.length > 0 && args[0] instanceof Error) {
+      const err = args[0];
+      // If the first arg is an Error, capture its details.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        ...getErrorObject(err),
+        rawArgsString: stringifyArgs(args.slice(1)),
+        timestamp: new Date().toISOString(),
+      };
+    } else {
+      // If not an Error object, treat all args as a general error message.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        message: stringifyArgs(args),
+        name: 'ConsoleLoggedError',
+        stack: null,
+        timestamp: new Date().toISOString(),
+      };
+    }
+    window.parent.postMessage(errorData, '*');
+    originalConsoleError.apply(console, args);
+  };
+
+  // Listen for global unhandled synchronous errors.
+  window.addEventListener('error', function(event) {
+    const errorDetails = event.error ? getErrorObject(event.error) : {
+      message: event.message,
+      name: 'GlobalError',
+      stack: null,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    };
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'global',
+      ...errorDetails,
+      message: errorDetails.message || event.message,
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+  // Listen for unhandled promise rejections (asynchronous errors).
+  window.addEventListener('unhandledrejection', function(event) {
+    const errorDetails = getErrorObject(event.reason);
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'unhandledrejection',
+      ...errorDetails,
+      message: errorDetails.message || 'Unhandled Promise Rejection',
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+})();</script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3A Global Innovation Lab</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com/"></script>
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" crossorigin="anonymous"></script>
+    
+    <!-- FontAwesome (for Icons instead of SVG) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&amp;family=Noto+Sans+JP:wght@400;500;700&amp;family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet">
+
+    <style>
+        /* Base font settings based on language will be handled in JS or utility classes */
+        body {
+            font-family: 'Inter', 'Noto Sans TC', 'Noto Sans JP', sans-serif;
+        }
+
+        /* Chart Container Strict Styling */
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px; /* Mobile default */
+            max-height: 400px;
+        }
+
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 400px;
+            }
+        }
+
+        /* Smooth transitions */
+        .transition-fade {
+            transition: opacity 0.3s ease-in-out;
+        }
+        
+        /* Custom scrollbar for cleanliness */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8; 
+        }
+
+        /* Accordion transitions */
+        .faq-content {
+            transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+        }
+        .faq-content.active {
+            opacity: 1;
+        }
+    </style>
+    
+    <!-- Chosen Palette: Tech Blue (#007AFF), Sustainable Green (#34C759), International Orange (#FF9500) -->
+    <!-- Application Structure Plan: 
+         1. Sticky Nav: Constant access to language switch and CTA.
+         2. Hero: High impact, establishes the 3A pillars immediately.
+         3. Safety (Priority): Dedicated section with distinct styling to build trust (Parent/School concern).
+         4. Global/EMI: Explains the "How" (English environment).
+         5. Analytics Dashboard: Visualizing the abstract "Growth" and "Curriculum Balance" using Chart.js to make the benefits tangible.
+         6. Agenda: Interactive Tabs (Day 1 / Day 2) to reduce scroll fatigue and allow focused exploring.
+         7. Target Audience: Grid for quick identification.
+         8. FAQ: Accordion to handle detailed queries without clutter.
+    -->
+    <!-- Visualization & Content Choices:
+         1. Student Competency Radar Chart: Visualizes the multi-faceted skill growth (Hard & Soft skills) described in the "Outcome" section. Goal: Show value.
+         2. Curriculum Composition Doughnut Chart: Breaks down the 2-day intensity into digestible categories (Hands-on, Discussion, AI). Goal: Inform balance.
+         3. Interactive Day Tabs: Organizes the chronological flow.
+         4. FAQ Accordion: Organizes text-heavy Q&A. 
+         Library: Chart.js for canvas rendering. Vanilla JS for logic. FontAwesome for icons. 
+    -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.bottom-\[-10\%\]{bottom:-10%}.left-0{left:0px}.left-\[-10\%\]{left:-10%}.right-\[-5\%\]{right:-5%}.top-0{top:0px}.top-\[-10\%\]{top:-10%}.z-10{z-index:10}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-10{margin-bottom:2.5rem}.mb-12{margin-bottom:3rem}.mb-16{margin-bottom:4rem}.mb-2{margin-bottom:0.5rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.ml-2{margin-left:0.5rem}.mr-4{margin-right:1rem}.mt-1{margin-top:0.25rem}.mt-2{margin-top:0.5rem}.mt-4{margin-top:1rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-1{height:0.25rem}.h-12{height:3rem}.h-20{height:5rem}.h-3{height:0.75rem}.h-72{height:18rem}.h-96{height:24rem}.h-full{height:100%}.w-12{width:3rem}.w-20{width:5rem}.w-3{width:0.75rem}.w-72{width:18rem}.w-96{width:24rem}.w-full{width:100%}.w-px{width:1px}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-5xl{max-width:64rem}.max-w-7xl{max-width:80rem}.max-w-md{max-width:28rem}.flex-1{flex:1 1 0%}.flex-shrink-0{flex-shrink:0}.origin-left{transform-origin:left}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-center{align-items:center}.items-stretch{align-items:stretch}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-12{gap:3rem}.gap-2{gap:0.5rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-x-8 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(2rem * var(--tw-space-x-reverse));margin-left:calc(2rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-1 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.25rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-t{border-top-width:1px}.border-blue-500\/30{border-color:rgb(59 130 246 / 0.3)}.border-blue-800{--tw-border-opacity:1;border-color:rgb(30 64 175 / var(--tw-border-opacity, 1))}.border-gray-100{--tw-border-opacity:1;border-color:rgb(243 244 246 / var(--tw-border-opacity, 1))}.border-gray-200{--tw-border-opacity:1;border-color:rgb(229 231 235 / var(--tw-border-opacity, 1))}.border-slate-100{--tw-border-opacity:1;border-color:rgb(241 245 249 / var(--tw-border-opacity, 1))}.border-slate-700{--tw-border-opacity:1;border-color:rgb(51 65 85 / var(--tw-border-opacity, 1))}.border-white{--tw-border-opacity:1;border-color:rgb(255 255 255 / var(--tw-border-opacity, 1))}.border-white\/10{border-color:rgb(255 255 255 / 0.1)}.border-white\/20{border-color:rgb(255 255 255 / 0.2)}.bg-blue-100{--tw-bg-opacity:1;background-color:rgb(219 234 254 / var(--tw-bg-opacity, 1))}.bg-blue-500{--tw-bg-opacity:1;background-color:rgb(59 130 246 / var(--tw-bg-opacity, 1))}.bg-blue-600{--tw-bg-opacity:1;background-color:rgb(37 99 235 / var(--tw-bg-opacity, 1))}.bg-blue-800\/50{background-color:rgb(30 64 175 / 0.5)}.bg-blue-900{--tw-bg-opacity:1;background-color:rgb(30 58 138 / var(--tw-bg-opacity, 1))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.bg-gray-200{--tw-bg-opacity:1;background-color:rgb(229 231 235 / var(--tw-bg-opacity, 1))}.bg-gray-50{--tw-bg-opacity:1;background-color:rgb(249 250 251 / var(--tw-bg-opacity, 1))}.bg-green-500{--tw-bg-opacity:1;background-color:rgb(34 197 94 / var(--tw-bg-opacity, 1))}.bg-orange-100{--tw-bg-opacity:1;background-color:rgb(255 237 213 / var(--tw-bg-opacity, 1))}.bg-orange-500{--tw-bg-opacity:1;background-color:rgb(249 115 22 / var(--tw-bg-opacity, 1))}.bg-purple-500{--tw-bg-opacity:1;background-color:rgb(168 85 247 / var(--tw-bg-opacity, 1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.bg-transparent{background-color:transparent}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/10{background-color:rgb(255 255 255 / 0.1)}.bg-white\/90{background-color:rgb(255 255 255 / 0.9)}.bg-white\/95{background-color:rgb(255 255 255 / 0.95)}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.from-slate-900{--tw-gradient-from:#0f172a var(--tw-gradient-from-position);--tw-gradient-to:rgb(15 23 42 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-blue-900{--tw-gradient-to:#1e3a8a var(--tw-gradient-to-position)}.p-1{padding:0.25rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pb-16{padding-bottom:4rem}.pb-6{padding-bottom:1.5rem}.pb-8{padding-bottom:2rem}.pt-12{padding-top:3rem}.pt-2{padding-top:0.5rem}.pt-20{padding-top:5rem}.pt-4{padding-top:1rem}.pt-8{padding-top:2rem}.text-left{text-align:left}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-light{font-weight:300}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-0.025em}.tracking-wide{letter-spacing:0.025em}.tracking-wider{letter-spacing:0.05em}.text-blue-100{--tw-text-opacity:1;color:rgb(219 234 254 / var(--tw-text-opacity, 1))}.text-blue-200{--tw-text-opacity:1;color:rgb(191 219 254 / var(--tw-text-opacity, 1))}.text-blue-400{--tw-text-opacity:1;color:rgb(96 165 250 / var(--tw-text-opacity, 1))}.text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}.text-gray-800{--tw-text-opacity:1;color:rgb(31 41 55 / var(--tw-text-opacity, 1))}.text-gray-900{--tw-text-opacity:1;color:rgb(17 24 39 / var(--tw-text-opacity, 1))}.text-green-400{--tw-text-opacity:1;color:rgb(74 222 128 / var(--tw-text-opacity, 1))}.text-green-600{--tw-text-opacity:1;color:rgb(22 163 74 / var(--tw-text-opacity, 1))}.text-orange-400{--tw-text-opacity:1;color:rgb(251 146 60 / var(--tw-text-opacity, 1))}.text-orange-500{--tw-text-opacity:1;color:rgb(249 115 22 / var(--tw-text-opacity, 1))}.text-orange-600{--tw-text-opacity:1;color:rgb(234 88 12 / var(--tw-text-opacity, 1))}.text-purple-400{--tw-text-opacity:1;color:rgb(192 132 252 / var(--tw-text-opacity, 1))}.text-purple-600{--tw-text-opacity:1;color:rgb(147 51 234 / var(--tw-text-opacity, 1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.placeholder-gray-500::placeholder{--tw-placeholder-opacity:1;color:rgb(107 114 128 / var(--tw-placeholder-opacity, 1))}.opacity-20{opacity:0.2}.opacity-0{opacity:0}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-blue-600\/20{--tw-shadow-color:rgb(37 99 235 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.shadow-orange-500\/30{--tw-shadow-color:rgb(249 115 22 / 0.3);--tw-shadow:var(--tw-shadow-colored)}.blur-3xl{--tw-blur:blur(64px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.selection\:bg-blue-100 *::selection{--tw-bg-opacity:1;background-color:rgb(219 234 254 / var(--tw-bg-opacity, 1))}.selection\:text-blue-800 *::selection{--tw-text-opacity:1;color:rgb(30 64 175 / var(--tw-text-opacity, 1))}.selection\:bg-blue-100::selection{--tw-bg-opacity:1;background-color:rgb(219 234 254 / var(--tw-bg-opacity, 1))}.selection\:text-blue-800::selection{--tw-text-opacity:1;color:rgb(30 64 175 / var(--tw-text-opacity, 1))}.hover\:-translate-y-0\.5:hover{--tw-translate-y:-0.125rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:-translate-y-1:hover{--tw-translate-y:-0.25rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:border-blue-500:hover{--tw-border-opacity:1;border-color:rgb(59 130 246 / var(--tw-border-opacity, 1))}.hover\:border-green-500:hover{--tw-border-opacity:1;border-color:rgb(34 197 94 / var(--tw-border-opacity, 1))}.hover\:border-orange-500:hover{--tw-border-opacity:1;border-color:rgb(249 115 22 / var(--tw-border-opacity, 1))}.hover\:border-purple-500:hover{--tw-border-opacity:1;border-color:rgb(168 85 247 / var(--tw-border-opacity, 1))}.hover\:bg-blue-700:hover{--tw-bg-opacity:1;background-color:rgb(29 78 216 / var(--tw-bg-opacity, 1))}.hover\:bg-gray-50:hover{--tw-bg-opacity:1;background-color:rgb(249 250 251 / var(--tw-bg-opacity, 1))}.hover\:bg-orange-600:hover{--tw-bg-opacity:1;background-color:rgb(234 88 12 / var(--tw-bg-opacity, 1))}.hover\:bg-white\/15:hover{background-color:rgb(255 255 255 / 0.15)}.hover\:bg-white\/20:hover{background-color:rgb(255 255 255 / 0.2)}.hover\:bg-gray-100:hover{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.hover\:text-blue-600:hover{--tw-text-opacity:1;color:rgb(37 99 235 / var(--tw-text-opacity, 1))}.hover\:text-gray-700:hover{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}.hover\:shadow-md:hover{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-orange-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(249 115 22 / var(--tw-ring-opacity, 1))}.group:last-child .group-last\:h-4{height:1rem}.group:hover .group-hover\:scale-110{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@media (min-width: 640px){.sm\:flex-row{flex-direction:row}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}}@media (min-width: 768px){.md\:flex{display:flex}.md\:hidden{display:none}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:p-10{padding:2.5rem}.md\:pt-20{padding-top:5rem}.md\:text-2xl{font-size:1.5rem;line-height:2rem}.md\:text-4xl{font-size:2.25rem;line-height:2.5rem}.md\:text-5xl{font-size:3rem;line-height:1}}@media (min-width: 1024px){.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.lg\:px-8{padding-left:2rem;padding-right:2rem}.lg\:pb-24{padding-bottom:6rem}.lg\:text-6xl{font-size:3.75rem;line-height:1}}</style></head>
+<body class="bg-gray-50 text-gray-800 antialiased selection:bg-blue-100 selection:text-blue-800">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm shadow-sm transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <i class="fa-solid fa-drone text-blue-600 text-2xl"></i>
+                    <span class="font-bold text-xl tracking-tight text-slate-800">3A Global Lab</span>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="blob:https://1jaf8gnpciaruw5lbv6xe20qvfdd3jb11m0qxzumani0jxz3fs-h864888888.scf.usercontent.goog/4b5a5d7a-87cd-4508-8e5e-2e3e9cf23196#features" class="text-gray-600 hover:text-blue-600 font-medium transition transition-fade" data-key="nav_features">核心特色</a>
+                    <a href="blob:https://1jaf8gnpciaruw5lbv6xe20qvfdd3jb11m0qxzumani0jxz3fs-h864888888.scf.usercontent.goog/4b5a5d7a-87cd-4508-8e5e-2e3e9cf23196#safety" class="text-gray-600 hover:text-blue-600 font-medium transition transition-fade" data-key="nav_safety">安全保障</a>
+                    <a href="blob:https://1jaf8gnpciaruw5lbv6xe20qvfdd3jb11m0qxzumani0jxz3fs-h864888888.scf.usercontent.goog/4b5a5d7a-87cd-4508-8e5e-2e3e9cf23196#agenda" class="text-gray-600 hover:text-blue-600 font-medium transition transition-fade" data-key="nav_agenda">課程流程</a>
+                    <a href="blob:https://1jaf8gnpciaruw5lbv6xe20qvfdd3jb11m0qxzumani0jxz3fs-h864888888.scf.usercontent.goog/4b5a5d7a-87cd-4508-8e5e-2e3e9cf23196#contact" class="text-gray-600 hover:text-blue-600 font-medium transition transition-fade" data-key="nav_contact">聯絡我們</a>
+                </div>
+
+                <!-- Right Side: Lang & CTA -->
+                <div class="hidden md:flex items-center gap-4">
+                    <!-- Language Switcher -->
+                    <div class="flex border border-gray-200 rounded-lg overflow-hidden p-1 bg-gray-50">
+                        <button onclick="setLang(&#39;zh&#39;)" id="btn-zh" class="px-3 py-1 text-sm rounded-md transition font-medium bg-blue-600 text-white shadow-sm">繁</button>
+                        <button onclick="setLang(&#39;en&#39;)" id="btn-en" class="px-3 py-1 text-sm rounded-md transition font-medium text-gray-600 hover:bg-gray-100">EN</button>
+                        <button onclick="setLang(&#39;jp&#39;)" id="btn-jp" class="px-3 py-1 text-sm rounded-md transition font-medium text-gray-600 hover:bg-gray-100">日</button>
+                    </div>
+                    <!-- CTA -->
+                    <a href="blob:https://1jaf8gnpciaruw5lbv6xe20qvfdd3jb11m0qxzumani0jxz3fs-h864888888.scf.usercontent.goog/4b5a5d7a-87cd-4508-8e5e-2e3e9cf23196#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-full font-bold shadow-lg shadow-blue-600/20 transition transform hover:-translate-y-0.5 transition-fade" data-key="nav_cta">學校團體申請</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-blue-600 focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a href="blob:https://1jaf8gnpciaruw5lbv6xe20qvfdd3jb11m0qxzumani0jxz3fs-h864888888.scf.usercontent.goog/4b5a5d7a-87cd-4508-8e5e-2e3e9cf23196#features" class="block px-3 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 rounded-md transition-fade" data-key="nav_features" onclick="toggleMobileMenu()">核心特色</a>
+                <a href="blob:https://1jaf8gnpciaruw5lbv6xe20qvfdd3jb11m0qxzumani0jxz3fs-h864888888.scf.usercontent.goog/4b5a5d7a-87cd-4508-8e5e-2e3e9cf23196#safety" class="block px-3 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 rounded-md transition-fade" data-key="nav_safety" onclick="toggleMobileMenu()">安全保障</a>
+                <a href="blob:https://1jaf8gnpciaruw5lbv6xe20qvfdd3jb11m0qxzumani0jxz3fs-h864888888.scf.usercontent.goog/4b5a5d7a-87cd-4508-8e5e-2e3e9cf23196#agenda" class="block px-3 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 rounded-md transition-fade" data-key="nav_agenda" onclick="toggleMobileMenu()">課程流程</a>
+                <a href="blob:https://1jaf8gnpciaruw5lbv6xe20qvfdd3jb11m0qxzumani0jxz3fs-h864888888.scf.usercontent.goog/4b5a5d7a-87cd-4508-8e5e-2e3e9cf23196#contact" class="block px-3 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 rounded-md transition-fade" data-key="nav_contact" onclick="toggleMobileMenu()">聯絡我們</a>
+                
+                <div class="pt-4 flex gap-2 justify-center">
+                    <button onclick="setLang(&#39;zh&#39;)" class="flex-1 py-2 border rounded text-center text-sm font-medium hover:bg-gray-50">繁體中文</button>
+                    <button onclick="setLang(&#39;en&#39;)" class="flex-1 py-2 border rounded text-center text-sm font-medium hover:bg-gray-50">English</button>
+                    <button onclick="setLang(&#39;jp&#39;)" class="flex-1 py-2 border rounded text-center text-sm font-medium hover:bg-gray-50">日本語</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-20">
+
+        <!-- HERO SECTION -->
+        <section id="home" class="relative bg-gradient-to-br from-slate-900 to-blue-900 text-white pb-16 pt-12 md:pt-20 lg:pb-24 overflow-hidden">
+            <!-- Decorative Background Elements -->
+            <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-20 pointer-events-none">
+                <div class="absolute top-[-10%] right-[-5%] w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-[-10%] left-[-10%] w-72 h-72 bg-green-500 rounded-full blur-3xl"></div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                <div class="inline-block mb-4 px-4 py-1.5 rounded-full bg-blue-800/50 border border-blue-500/30 text-blue-200 text-sm font-semibold tracking-wide uppercase backdrop-blur-md">
+                    <span data-key="hero_badge" class="transition-fade">未來創新實作營</span>
+                </div>
+                
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-tight transition-fade" data-key="hero_title">3A Global Innovation Lab：未來創新實作營</h1>
+                
+                <p class="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto mb-10 font-light transition-fade" data-key="hero_subtitle">英語沉浸學習 × AI 無人機科技 × 永續創新｜讓孩子在安全中看見世界</p>
+
+                <div class="flex flex-col sm:flex-row justify-center gap-4 mb-16">
+                    <a href="blob:https://1jaf8gnpciaruw5lbv6xe20qvfdd3jb11m0qxzumani0jxz3fs-h864888888.scf.usercontent.goog/4b5a5d7a-87cd-4508-8e5e-2e3e9cf23196#contact" class="bg-orange-500 hover:bg-orange-600 text-white text-lg px-8 py-4 rounded-full font-bold shadow-lg shadow-orange-500/30 transition transform hover:-translate-y-1 transition-fade" data-key="hero_cta">立即預約學校場次</a>
+                    <a href="blob:https://1jaf8gnpciaruw5lbv6xe20qvfdd3jb11m0qxzumani0jxz3fs-h864888888.scf.usercontent.goog/4b5a5d7a-87cd-4508-8e5e-2e3e9cf23196#features" class="bg-white/10 hover:bg-white/20 text-white backdrop-blur-sm border border-white/20 text-lg px-8 py-4 rounded-full font-semibold transition">
+                        <span data-key="hero_learn_more" class="transition-fade">了解更多</span> <i class="fa-solid fa-arrow-down ml-2 text-sm"></i>
+                    </a>
+                </div>
+
+                <!-- 3 Pillars Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left" id="features">
+                    <!-- Agile -->
+                    <div class="bg-white/10 backdrop-blur-md border border-white/10 p-6 rounded-2xl hover:bg-white/15 transition duration-300">
+                        <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mb-4 text-white text-xl">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-white transition-fade" data-key="val_agile_title">設計思考 Agile</h3>
+                        <p class="text-blue-100 text-sm leading-relaxed transition-fade" data-key="val_agile_desc">針對 17 SDGs 議題，運用結構化設計思考方法定義問題並提出同理心解決方案。</p>
+                    </div>
+                    <!-- AI -->
+                    <div class="bg-white/10 backdrop-blur-md border border-white/10 p-6 rounded-2xl hover:bg-white/15 transition duration-300">
+                        <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center mb-4 text-white text-xl">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-white transition-fade" data-key="val_ai_title">人工智慧 AI</h3>
+                        <p class="text-blue-100 text-sm leading-relaxed transition-fade" data-key="val_ai_desc">利用生成式 AI 輔助撰寫英文腳本、進行研究並發展創意分鏡。</p>
+                    </div>
+                    <!-- Aerial -->
+                    <div class="bg-white/10 backdrop-blur-md border border-white/10 p-6 rounded-2xl hover:bg-white/15 transition duration-300">
+                        <div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center mb-4 text-white text-xl">
+                            <i class="fa-solid fa-plane-up"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-white transition-fade" data-key="val_drone_title">空拍科技 Aerial</h3>
+                        <p class="text-blue-100 text-sm leading-relaxed transition-fade" data-key="val_drone_desc">透過專業無人機操作與空拍運鏡，以全新視角觀察世界。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SAFETY SECTION -->
+        <section id="safety" class="py-16 bg-white relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <span class="text-green-600 font-bold tracking-wider uppercase text-sm mb-2 block transition-fade" data-key="safety_badge">安全第一</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 transition-fade" data-key="safety_title">專業團隊監護，飛安 100% 安心</h2>
+                    <div class="w-20 h-1 bg-green-500 mx-auto mt-4 rounded-full"></div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+                    <!-- NIU Team Card -->
+                    <div class="bg-slate-50 border border-slate-100 p-8 rounded-2xl shadow-sm hover:shadow-md transition flex flex-col items-center text-center">
+                        <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-3xl mb-6">
+                            <i class="fa-solid fa-user-shield"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4 transition-fade" data-key="safety_niu_title">國立宜蘭大學持證團隊</h3>
+                        <p class="text-gray-600 leading-relaxed transition-fade" data-key="safety_niu_text">由國立宜蘭大學無人機專業團隊親自帶領。所有飛行操作均由持證專家負責或監督，確保符合法規。</p>
+                    </div>
+
+                    <!-- TRUST Test Card -->
+                    <div class="bg-slate-50 border border-slate-100 p-8 rounded-2xl shadow-sm hover:shadow-md transition flex flex-col items-center text-center">
+                        <div class="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center text-orange-600 text-3xl mb-6">
+                            <i class="fa-solid fa-clipboard-check"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4 transition-fade" data-key="safety_trust_title">TRUST 安全測驗</h3>
+                        <p class="text-gray-600 leading-relaxed transition-fade" data-key="safety_trust_text">每位學生都將接受基礎無人機安全教育，並完成美國 FAA 認可之 TRUST 測驗。培養負責任素養。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GLOBAL & EMI + ANALYTICS SECTION -->
+        <section class="py-16 bg-gray-50 border-t border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Text Intro -->
+                <div class="text-center mb-12">
+                    <span class="text-orange-500 font-bold tracking-wider uppercase text-sm mb-2 block transition-fade" data-key="global_badge">全球視野</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 transition-fade" data-key="global_title">真實的國際交流場域</h2>
+                    <p class="max-w-2xl mx-auto text-gray-600 mb-8 transition-fade" data-key="global_intro_p">本區塊強調我們的全英語環境以及學生獲得的具體技能。我們使用數據圖表來可視化均衡的課程設計與學生全方位的成長。</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+                    <!-- Feature: EMI -->
+                    <div class="flex gap-5">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white text-xl">
+                                <i class="fa-solid fa-earth-americas"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-900 mb-2 transition-fade" data-key="global_emi_title">全英語專案學習 (EMI)</h4>
+                            <p class="text-gray-600 leading-relaxed transition-fade" data-key="global_emi_text">全程英語授課，模擬國際研討會氛圍，讓學生習慣用英語「思考」與「解決問題」。</p>
+                        </div>
+                    </div>
+                    <!-- Feature: TAs -->
+                    <div class="flex gap-5">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-orange-500 text-white text-xl">
+                                <i class="fa-solid fa-users-rays"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-900 mb-2 transition-fade" data-key="global_ta_title">國際助教 (International TAs)</h4>
+                            <p class="text-gray-600 leading-relaxed transition-fade" data-key="global_ta_text">來自世界各地的外籍大學生擔任小組助教，提供跨文化觀點，協助學生勇敢開口。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ANALYTICS DASHBOARD -->
+                <div class="bg-white rounded-3xl shadow-lg p-6 md:p-10 border border-gray-100">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-8 text-center transition-fade" data-key="analytics_title">學習成效與課程配比</h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                        <!-- Chart 1: Competency Radar -->
+                        <div class="flex flex-col items-center">
+                            <h4 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4 transition-fade" data-key="chart_radar_title">學生核心能力成長</h4>
+                            <div class="chart-container">
+                                <canvas id="competencyChart" width="920" height="1080" style="display: block; box-sizing: border-box; height: 400px; width: 340.9px;"></canvas>
+                            </div>
+                            <p class="text-xs text-gray-400 mt-2 text-center italic transition-fade" data-key="chart_radar_note">兩天實作後的預估技能提升</p>
+                        </div>
+
+                        <!-- Chart 2: Curriculum Doughnut -->
+                        <div class="flex flex-col items-center">
+                            <h4 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4 transition-fade" data-key="chart_doughnut_title">課程時間分配</h4>
+                            <div class="chart-container" style="max-height: 300px;">
+                                <canvas id="curriculumChart" width="920" height="810" style="display: block; box-sizing: border-box; height: 300px; width: 340.9px;"></canvas>
+                            </div>
+                            <p class="text-xs text-gray-400 mt-2 text-center italic transition-fade" data-key="chart_doughnut_note">理論、實作與創作的黃金比例</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- AGENDA SECTION (Interactive Tabs) -->
+        <section id="agenda" class="py-16 bg-white">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-bold text-gray-900 transition-fade" data-key="agenda_title">兩天密集實作流程</h2>
+                    <p class="text-gray-500 mt-2 transition-fade" data-key="agenda_subtitle">從理論到空拍敘事的完整旅程</p>
+                </div>
+
+                <!-- Tabs -->
+                <div class="flex justify-center mb-8">
+                    <div class="bg-gray-100 p-1 rounded-xl inline-flex">
+                        <button id="tab-day1" onclick="switchTab(&#39;day1&#39;)" class="px-6 py-2.5 rounded-lg text-sm font-bold transition-all shadow-sm bg-white text-blue-600">
+                            <span data-key="day1_label" class="transition-fade">Day 1: 探索與定義</span>
+                        </button>
+                        <button id="tab-day2" onclick="switchTab(&#39;day2&#39;)" class="px-6 py-2.5 rounded-lg text-sm font-bold text-gray-500 hover:text-gray-700 transition-all">
+                            <span data-key="day2_label" class="transition-fade">Day 2: 創造與發表</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Day 1 Content -->
+                <div id="content-day1" class="space-y-6 animate-fade-in">
+                    <!-- Item -->
+                    <div class="flex group">
+                        <div class="flex flex-col items-center mr-4">
+                            <div class="w-px h-full bg-gray-200 group-last:h-4"></div>
+                            <div class="w-3 h-3 rounded-full bg-blue-500 border-2 border-white shadow-sm absolute mt-2"></div>
+                        </div>
+                        <div class="pb-8">
+                            <span class="text-sm font-bold text-blue-600">09:00</span>
+                            <h4 class="text-lg font-bold text-gray-900 mt-1 transition-fade" data-key="d1_t1_title">破冰與環境建立</h4>
+                            <p class="text-gray-600 text-sm mt-1 transition-fade" data-key="d1_t1_desc">分組與英語環境建立。</p>
+                        </div>
+                    </div>
+                    <!-- Item -->
+                    <div class="flex group">
+                        <div class="flex flex-col items-center mr-4">
+                            <div class="w-px h-full bg-gray-200"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-500 border-2 border-white shadow-sm absolute mt-2"></div>
+                        </div>
+                        <div class="pb-8">
+                            <span class="text-sm font-bold text-green-600">10:30</span>
+                            <h4 class="text-lg font-bold text-gray-900 mt-1 transition-fade" data-key="d1_t2_title">航空法規與 TRUST 測驗</h4>
+                            <p class="text-gray-600 text-sm mt-1 transition-fade" data-key="d1_t2_desc">重要的安全教育與認證。</p>
+                        </div>
+                    </div>
+                    <!-- Item -->
+                    <div class="flex group">
+                        <div class="flex flex-col items-center mr-4">
+                            <div class="w-px h-full bg-gray-200"></div>
+                            <div class="w-3 h-3 rounded-full bg-purple-500 border-2 border-white shadow-sm absolute mt-2"></div>
+                        </div>
+                        <div class="pb-8">
+                            <span class="text-sm font-bold text-purple-600">13:30</span>
+                            <h4 class="text-lg font-bold text-gray-900 mt-1 transition-fade" data-key="d1_t3_title">設計思考：同理與定義</h4>
+                            <p class="text-gray-600 text-sm mt-1 transition-fade" data-key="d1_t3_desc">針對 17 SDGs 議題發想。</p>
+                        </div>
+                    </div>
+                    <!-- Item -->
+                    <div class="flex group">
+                        <div class="flex flex-col items-center mr-4">
+                            <div class="w-px h-full bg-transparent"></div> <!-- End line -->
+                            <div class="w-3 h-3 rounded-full bg-blue-500 border-2 border-white shadow-sm absolute mt-2"></div>
+                        </div>
+                        <div>
+                            <span class="text-sm font-bold text-blue-600">15:30</span>
+                            <h4 class="text-lg font-bold text-gray-900 mt-1 transition-fade" data-key="d1_t4_title">基礎飛行原理與體驗</h4>
+                            <p class="text-gray-600 text-sm mt-1 transition-fade" data-key="d1_t4_desc">專業團隊指導下的手感練習。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 2 Content (Hidden by default) -->
+                <div id="content-day2" class="space-y-6 hidden animate-fade-in">
+                    <!-- Item -->
+                    <div class="flex group">
+                        <div class="flex flex-col items-center mr-4">
+                            <div class="w-px h-full bg-gray-200 group-last:h-4"></div>
+                            <div class="w-3 h-3 rounded-full bg-purple-500 border-2 border-white shadow-sm absolute mt-2"></div>
+                        </div>
+                        <div class="pb-8">
+                            <span class="text-sm font-bold text-purple-600">09:00</span>
+                            <h4 class="text-lg font-bold text-gray-900 mt-1 transition-fade" data-key="d2_t1_title">AI 協作：腳本與分鏡</h4>
+                            <p class="text-gray-600 text-sm mt-1 transition-fade" data-key="d2_t1_desc">使用生成式 AI 撰寫英文敘事。</p>
+                        </div>
+                    </div>
+                    <!-- Item -->
+                    <div class="flex group">
+                        <div class="flex flex-col items-center mr-4">
+                            <div class="w-px h-full bg-gray-200"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-500 border-2 border-white shadow-sm absolute mt-2"></div>
+                        </div>
+                        <div class="pb-8">
+                            <span class="text-sm font-bold text-green-600">10:30</span>
+                            <h4 class="text-lg font-bold text-gray-900 mt-1 transition-fade" data-key="d2_t2_title">專業空拍實作</h4>
+                            <p class="text-gray-600 text-sm mt-1 transition-fade" data-key="d2_t2_desc">團隊協助進行戶外操作。</p>
+                        </div>
+                    </div>
+                    <!-- Item -->
+                    <div class="flex group">
+                        <div class="flex flex-col items-center mr-4">
+                            <div class="w-px h-full bg-gray-200"></div>
+                            <div class="w-3 h-3 rounded-full bg-blue-500 border-2 border-white shadow-sm absolute mt-2"></div>
+                        </div>
+                        <div class="pb-8">
+                            <span class="text-sm font-bold text-blue-600">13:30</span>
+                            <h4 class="text-lg font-bold text-gray-900 mt-1 transition-fade" data-key="d2_t3_title">影片剪輯與後製</h4>
+                            <p class="text-gray-600 text-sm mt-1 transition-fade" data-key="d2_t3_desc">將 SDG 故事組裝完成。</p>
+                        </div>
+                    </div>
+                    <!-- Item -->
+                    <div class="flex group">
+                        <div class="flex flex-col items-center mr-4">
+                            <div class="w-px h-full bg-transparent"></div>
+                            <div class="w-3 h-3 rounded-full bg-orange-500 border-2 border-white shadow-sm absolute mt-2"></div>
+                        </div>
+                        <div>
+                            <span class="text-sm font-bold text-orange-600">15:30</span>
+                            <h4 class="text-lg font-bold text-gray-900 mt-1 transition-fade" data-key="d2_t4_title">全英語成果發表</h4>
+                            <p class="text-gray-600 text-sm mt-1 transition-fade" data-key="d2_t4_desc">最終成果展示與回饋。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TARGET AUDIENCE -->
+        <section class="py-16 bg-slate-900 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-12 transition-fade" data-key="target_title">適合對象</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Directors -->
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-blue-500 transition group">
+                        <div class="text-blue-400 text-3xl mb-4 group-hover:scale-110 transition-transform origin-left"><i class="fa-solid fa-school"></i></div>
+                        <h3 class="text-lg font-bold mb-2 transition-fade" data-key="target_director_title">高中課程主任</h3>
+                        <p class="text-slate-300 text-sm transition-fade" data-key="target_director_desc">導入高品質雙語科技跨域課程。</p>
+                    </div>
+                    <!-- Teachers -->
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-green-500 transition group">
+                        <div class="text-green-400 text-3xl mb-4 group-hover:scale-110 transition-transform origin-left"><i class="fa-solid fa-chalkboard-user"></i></div>
+                        <h3 class="text-lg font-bold mb-2 transition-fade" data-key="target_teacher_title">教師</h3>
+                        <p class="text-slate-300 text-sm transition-fade" data-key="target_teacher_desc">完整教案支持，專業團隊分擔風險。</p>
+                    </div>
+                    <!-- Parents -->
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-orange-500 transition group">
+                        <div class="text-orange-400 text-3xl mb-4 group-hover:scale-110 transition-transform origin-left"><i class="fa-solid fa-users"></i></div>
+                        <h3 class="text-lg font-bold mb-2 transition-fade" data-key="target_parent_title">家長</h3>
+                        <p class="text-slate-300 text-sm transition-fade" data-key="target_parent_desc">安全監督下，提升國際競爭力。</p>
+                    </div>
+                    <!-- Students -->
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-purple-500 transition group">
+                        <div class="text-purple-400 text-3xl mb-4 group-hover:scale-110 transition-transform origin-left"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h3 class="text-lg font-bold mb-2 transition-fade" data-key="target_student_title">學生</h3>
+                        <p class="text-slate-300 text-sm transition-fade" data-key="target_student_desc">完成一份可用於升學的亮眼專案。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-10 text-gray-900 transition-fade" data-key="faq_title">常見問答</h2>
+                
+                <div class="space-y-4">
+                    <!-- Q1 -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+                        <button onclick="toggleFaq(1)" class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none">
+                            <span class="font-bold text-gray-800 transition-fade" data-key="faq_q1">學生需要自己操作無人機嗎？</span>
+                            <i id="icon-faq-1" class="fa-solid fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                        </button>
+                        <div id="faq-1" class="faq-content bg-gray-50 px-6 border-t border-gray-100">
+                            <p class="py-4 text-gray-600 transition-fade" data-key="faq_a1">安全首要考量。高空飛行由持證團隊操作，學生僅在受控環境下體驗。</p>
+                        </div>
+                    </div>
+
+                    <!-- Q2 -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+                        <button onclick="toggleFaq(2)" class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none">
+                            <span class="font-bold text-gray-800 transition-fade" data-key="faq_q2">英文不好可以參加嗎？</span>
+                            <i id="icon-faq-2" class="fa-solid fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                        </button>
+                        <div id="faq-2" class="faq-content bg-gray-50 px-6 border-t border-gray-100">
+                            <p class="py-4 text-gray-600 transition-fade" data-key="faq_a2">可以！重點是溝通。國際助教與 AI 工具會全力協助。</p>
+                        </div>
+                    </div>
+
+                    <!-- Q3 -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+                        <button onclick="toggleFaq(3)" class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none">
+                            <span class="font-bold text-gray-800 transition-fade" data-key="faq_q3">會有證書嗎？</span>
+                            <i id="icon-faq-3" class="fa-solid fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                        </button>
+                        <div id="faq-3" class="faq-content bg-gray-50 px-6 border-t border-gray-100">
+                            <p class="py-4 text-gray-600 transition-fade" data-key="faq_a3">是的，將獲發「3A 全球創新實作研習證書」。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER & CONTACT -->
+        <footer id="contact" class="bg-blue-900 text-white py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 transition-fade" data-key="footer_title">讓孩子安全地站上國際舞台。</h2>
+                <p class="text-blue-200 mb-10 max-w-2xl mx-auto transition-fade" data-key="footer_subtitle">現在就與我們合作，將此沈浸式體驗帶入您的學校。</p>
+                
+                <form class="max-w-md mx-auto bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/10 mb-10" onsubmit="event.preventDefault(); alert(&#39;Application feature demo!&#39;);">
+                    <input type="email" placeholder="School Contact Email" class="w-full px-4 py-3 rounded-lg bg-white/90 text-gray-900 placeholder-gray-500 mb-4 focus:outline-none focus:ring-2 focus:ring-orange-500">
+                    <button type="submit" class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 rounded-lg transition shadow-lg transition-fade" data-key="footer_btn">填寫合作意向書</button>
+                </form>
+
+                <div class="border-t border-blue-800 pt-8 text-blue-400 text-sm">
+                    © 2026 3A Global Innovation Lab. All Rights Reserved. <br>
+                    National Ilan University
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // --- 1. Content Data (Trilingual) ---
+        const content = {
+            zh: {
+                nav_features: "核心特色",
+                nav_safety: "安全保障",
+                nav_agenda: "課程流程",
+                nav_contact: "聯絡我們",
+                nav_cta: "學校團體申請",
+                
+                hero_badge: "未來創新實作營",
+                hero_title: "3A Global Innovation Lab：未來創新實作營",
+                hero_subtitle: "英語沉浸學習 × AI 無人機科技 × 永續創新｜讓孩子在安全中看見世界",
+                hero_cta: "立即預約學校場次",
+                hero_learn_more: "了解更多",
+                
+                val_agile_title: "設計思考 Agile",
+                val_agile_desc: "針對 17 SDGs 議題，運用結構化設計思考方法定義問題並提出同理心解決方案。",
+                val_ai_title: "人工智慧 AI",
+                val_ai_desc: "利用生成式 AI 輔助撰寫英文腳本、進行研究並發展創意分鏡。",
+                val_drone_title: "空拍科技 Aerial",
+                val_drone_desc: "透過專業無人機操作與空拍運鏡，以全新視角觀察世界。",
+                
+                safety_badge: "安全第一",
+                safety_title: "專業團隊監護，飛安 100% 安心",
+                safety_niu_title: "國立宜蘭大學持證團隊",
+                safety_niu_text: "由國立宜蘭大學無人機專業團隊親自帶領。所有飛行操作均由持證專家負責或監督，確保符合法規。",
+                safety_trust_title: "TRUST 安全測驗",
+                safety_trust_text: "每位學生都將接受基礎無人機安全教育，並完成美國 FAA 認可之 TRUST 測驗。培養負責任素養。",
+                
+                global_badge: "全球視野",
+                global_title: "真實的國際交流場域",
+                global_intro_p: "本區塊強調我們的全英語環境以及學生獲得的具體技能。我們使用數據圖表來可視化均衡的課程設計與學生全方位的成長。",
+                global_emi_title: "全英語專案學習 (EMI)",
+                global_emi_text: "全程英語授課，模擬國際研討會氛圍，讓學生習慣用英語「思考」與「解決問題」。",
+                global_ta_title: "國際助教 (International TAs)",
+                global_ta_text: "來自世界各地的外籍大學生擔任小組助教，提供跨文化觀點，協助學生勇敢開口。",
+                
+                analytics_title: "學習成效與課程配比",
+                chart_radar_title: "學生核心能力成長",
+                chart_radar_note: "兩天實作後的預估技能提升",
+                chart_doughnut_title: "課程時間分配",
+                chart_doughnut_note: "理論、實作與創作的黃金比例",
+
+                agenda_title: "兩天密集實作流程",
+                agenda_subtitle: "從理論到空拍敘事的完整旅程",
+                day1_label: "Day 1: 探索與定義",
+                day2_label: "Day 2: 創造與發表",
+                
+                d1_t1_title: "破冰與環境建立",
+                d1_t1_desc: "分組與英語環境建立。",
+                d1_t2_title: "航空法規與 TRUST 測驗",
+                d1_t2_desc: "重要的安全教育與認證。",
+                d1_t3_title: "設計思考：同理與定義",
+                d1_t3_desc: "針對 17 SDGs 議題發想。",
+                d1_t4_title: "基礎飛行原理與體驗",
+                d1_t4_desc: "專業團隊指導下的手感練習。",
+                
+                d2_t1_title: "AI 協作：腳本與分鏡",
+                d2_t1_desc: "使用生成式 AI 撰寫英文敘事。",
+                d2_t2_title: "專業空拍實作",
+                d2_t2_desc: "團隊協助進行戶外操作。",
+                d2_t3_title: "影片剪輯與後製",
+                d2_t3_desc: "將 SDG 故事組裝完成。",
+                d2_t4_title: "全英語成果發表",
+                d2_t4_desc: "最終成果展示與回饋。",
+                
+                target_title: "適合對象",
+                target_director_title: "高中課程主任",
+                target_director_desc: "導入高品質雙語科技跨域課程。",
+                target_teacher_title: "教師",
+                target_teacher_desc: "完整教案支持，專業團隊分擔風險。",
+                target_parent_title: "家長",
+                target_parent_desc: "安全監督下，提升國際競爭力。",
+                target_student_title: "學生",
+                target_student_desc: "完成一份可用於升學的亮眼專案。",
+                
+                faq_title: "常見問答",
+                faq_q1: "學生需要自己操作無人機嗎？",
+                faq_a1: "安全首要考量。高空飛行由持證團隊操作，學生僅在受控環境下體驗。",
+                faq_q2: "英文不好可以參加嗎？",
+                faq_a2: "可以！重點是溝通。國際助教與 AI 工具會全力協助。",
+                faq_q3: "會有證書嗎？",
+                faq_a3: "是的，將獲發「3A 全球創新實作研習證書」。",
+                
+                footer_title: "讓孩子安全地站上國際舞台。",
+                footer_subtitle: "現在就與我們合作，將此沈浸式體驗帶入您的學校。",
+                footer_btn: "填寫合作意向書"
+            },
+            en: {
+                nav_features: "Features",
+                nav_safety: "Safety",
+                nav_agenda: "Agenda",
+                nav_contact: "Contact",
+                nav_cta: "Apply Now",
+                
+                hero_badge: "Future Innovation Workshop",
+                hero_title: "3A Global Innovation Lab",
+                hero_subtitle: "Immersive English • AI & Drone Tech • Sustainable Innovation | Safe Learning, Global Vision.",
+                hero_cta: "Book a Workshop",
+                hero_learn_more: "Explore More",
+                
+                val_agile_title: "Agile Design Thinking",
+                val_agile_desc: "Empathize with global issues and define solutions using structured design thinking methodologies.",
+                val_ai_title: "AI Application",
+                val_ai_desc: "Leverage Generative AI for scriptwriting, research, and creative storyboard development.",
+                val_drone_title: "Aerial Tech",
+                val_drone_desc: "See the world from a new perspective with professional drone operations and aerial cinematography.",
+                
+                safety_badge: "Safety First",
+                safety_title: "Professional Supervision, 100% Safety Guaranteed",
+                safety_niu_title: "NIU Certified Team",
+                safety_niu_text: "Led by National Ilan University experts. All flights operated by certified professionals adhering to strict aviation laws.",
+                safety_trust_title: "TRUST Safety Test",
+                safety_trust_text: "Students complete the FAA-recognized TRUST module. We cultivate responsible digital citizenship.",
+                
+                global_badge: "Global Vision",
+                global_title: "Real Global Interaction",
+                global_intro_p: "This section highlights our immersive English environment and the tangible skills students acquire. We use data to visualize the balanced curriculum and the comprehensive growth students experience.",
+                global_emi_title: "English-Medium Instruction",
+                global_emi_text: "Full immersion simulating international workshops. Students learn to think and solve problems in English.",
+                global_ta_title: "International TAs",
+                global_ta_text: "International university students act as mentors, providing cross-cultural perspectives and confidence.",
+                
+                analytics_title: "Learning Outcomes & Curriculum Balance",
+                chart_radar_title: "Student Competency Growth",
+                chart_radar_note: "Estimated skill enhancement over 2 days",
+                chart_doughnut_title: "Curriculum Time Allocation",
+                chart_doughnut_note: "Balance between theory, practice, and creation",
+
+                agenda_title: "Two-Day Intensive Agenda",
+                agenda_subtitle: "From theory to aerial storytelling",
+                day1_label: "Day 1: Explore & Define",
+                day2_label: "Day 2: Create & Present",
+                
+                d1_t1_title: "Ice Breaking & Environment Setup",
+                d1_t1_desc: "Team formation and English immersion intro.",
+                d1_t2_title: "Aviation Regulations & TRUST Test",
+                d1_t2_desc: "Crucial safety education and certification.",
+                d1_t3_title: "Design Thinking: Empathize & Define",
+                d1_t3_desc: "Focusing on 17 SDGs solutions.",
+                d1_t4_title: "Basic Flight Principles & Experience",
+                d1_t4_desc: "Hands-on practice guided by Pro Team.",
+                
+                d2_t1_title: "AI Collaboration: Script & Storyboard",
+                d2_t1_desc: "Using Generative AI to craft English narratives.",
+                d2_t2_title: "Pro Aerial Shooting",
+                d2_t2_desc: "Field operation assisted by certified team.",
+                d2_t3_title: "Video Editing & Post-production",
+                d2_t3_desc: "Assembling the SDG impact story.",
+                d2_t4_title: "Final Presentation",
+                d2_t4_desc: "English Gala Presentation of final videos.",
+                
+                target_title: "Who is this for?",
+                target_director_title: "Curriculum Directors",
+                target_director_desc: "Implement high-quality bilingual tech curricula.",
+                target_teacher_title: "Teachers",
+                target_teacher_desc: "Full lesson plan support; pros handle risks.",
+                target_parent_title: "Parents",
+                target_parent_desc: "Safe supervision, boosting global competitiveness.",
+                target_student_title: "Students",
+                target_student_desc: "Complete a standout project for applications.",
+                
+                faq_title: "Frequently Asked Questions",
+                faq_q1: "Do students fly drones themselves?",
+                faq_a1: "Safety is priority #1. High-altitude flights are operated by the certified NIU team. Students experience basic flight in controlled environments only.",
+                faq_q2: "Can students with poor English participate?",
+                faq_a2: "Yes! It's about communication, not exams. TAs and AI tools assist.",
+                faq_q3: "Will there be a certificate?",
+                faq_a3: "Yes, participants receive a formal workshop certificate.",
+                
+                footer_title: "Let students stand on the global stage safely.",
+                footer_subtitle: "Partner with us now to bring this immersive experience to your school.",
+                footer_btn: "Fill Inquiry Form"
+            },
+            jp: {
+                nav_features: "特徴",
+                nav_safety: "安全対策",
+                nav_agenda: "スケジュール",
+                nav_contact: "お問い合わせ",
+                nav_cta: "団体申込",
+                
+                hero_badge: "未来のイノベーション",
+                hero_title: "3A グローバル・イノベーション・ラボ",
+                hero_subtitle: "英語イマージョン × AIドローン技術 × 持続可能なイノベーション｜安心安全な環境で世界を広げる",
+                hero_cta: "学校向けワークショップを予約",
+                hero_learn_more: "詳細を見る",
+                
+                val_agile_title: "デザイン思考 (Agile)",
+                val_agile_desc: "SDGsの課題に対し、構造化されたデザイン思考を用いて解決策を定義します。",
+                val_ai_title: "AI活用 (AI)",
+                val_ai_desc: "生成AIを活用して英語の脚本作成、リサーチ、絵コンテ作成を行います。",
+                val_drone_title: "ドローン技術 (Aerial)",
+                val_drone_desc: "プロのドローン操作と空撮技術を通じて、新しい視点で世界を見ます。",
+                
+                safety_badge: "安全第一",
+                safety_title: "専門チームによる監修、100%の安全と安心",
+                safety_niu_title: "国立宜蘭大学有資格チーム",
+                safety_niu_text: "国立宜蘭大学のプロチームが直接指導。全ての飛行は有資格者が管理し、航空法を遵守します。",
+                safety_trust_title: "TRUST 安全テスト",
+                safety_trust_text: "全学生が基礎的な安全教育を受け、米国FAA認可のTRUSTテストの概念を学びます。",
+                
+                global_badge: "グローバルビジョン",
+                global_title: "英語の授業を超えた国際交流",
+                global_intro_p: "このセクションでは、没入型英語環境と習得スキルを紹介します。データを用いて、バランスの取れたカリキュラムと学生の成長を可視化します。",
+                global_emi_title: "オールイングリッシュ学習 (EMI)",
+                global_emi_text: "全編英語での授業で国際会議の雰囲気を再現。英語で「考え」「解決する」習慣を養います。",
+                global_ta_title: "留学生TA",
+                global_ta_text: "世界各国の留学生がメンターとして参加し、異文化の視点と自信を与えます。",
+                
+                analytics_title: "学習成果とカリキュラム構成",
+                chart_radar_title: "学生のコア能力の成長",
+                chart_radar_note: "2日間の実践による推定スキル向上",
+                chart_doughnut_title: "カリキュラム時間配分",
+                chart_doughnut_note: "理論、実践、創作の黄金比",
+
+                agenda_title: "2日間の集中講座",
+                agenda_subtitle: "理論から空撮ストーリーテリングまで",
+                day1_label: "Day 1: 探求と定義",
+                day2_label: "Day 2: 創造と発表",
+                
+                d1_t1_title: "アイスブレイクと環境構築",
+                d1_t1_desc: "チーム編成と英語環境の導入。",
+                d1_t2_title: "航空法規とTRUSTテスト",
+                d1_t2_desc: "重要な安全教育と認定。",
+                d1_t3_title: "デザイン思考：共感と定義",
+                d1_t3_desc: "17のSDGs課題に焦点を当てる。",
+                d1_t4_title: "飛行原理と体験",
+                d1_t4_desc: "専門チーム指導による実技練習。",
+                
+                d2_t1_title: "AI協働：脚本と絵コンテ",
+                d2_t1_desc: "生成AIを使って英語の物語を作成。",
+                d2_t2_title: "プロによる空撮実習",
+                d2_t2_desc: "チームの支援による屋外操作。",
+                d2_t3_title: "動画編集と編集",
+                d2_t3_desc: "SDGストーリーを組み立てる。",
+                d2_t4_title: "英語による成果発表会",
+                d2_t4_desc: "最終動画のプレゼンテーション。",
+                
+                target_title: "対象者",
+                target_director_title: "カリキュラム担当者",
+                target_director_desc: "高品質な技術カリキュラムの導入。",
+                target_teacher_title: "教師",
+                target_teacher_desc: "完全な指導案サポート、リスク管理。",
+                target_parent_title: "保護者",
+                target_parent_desc: "安全管理下での国際競争力向上。",
+                target_student_title: "学生",
+                target_student_desc: "進学に役立つプロジェクトの完成。",
+                
+                faq_title: "よくある質問",
+                faq_q1: "学生が自分でドローンを操作しますか？",
+                faq_a1: "安全が最優先です。高高度飛行は有資格チームが操作し、学生は管理下でのみ体験します。",
+                faq_q2: "英語が苦手でも参加できますか？",
+                faq_a2: "はい！コミュニケーションが目的です。留学生TAとAIがサポートします。",
+                faq_q3: "修了証はありますか？",
+                faq_a3: "はい、公式なワークショップ修了証が発行されます。",
+                
+                footer_title: "安全な環境で、子供たちを世界の舞台へ。",
+                footer_subtitle: "今すぐ提携して、この没入型体験をあなたの学校に。",
+                footer_btn: "提携意向書の記入"
+            }
+        };
+
+        // --- 2. Chart Configurations ---
+        let competencyChartInstance = null;
+        let curriculumChartInstance = null;
+
+        const chartData = {
+            zh: {
+                radarLabels: ["設計思考", "AI 應用", "無人機操作", "英語溝通", "全球意識"],
+                radarLabel: "能力成長幅度",
+                doughnutLabels: ["實作體驗", "小組討論", "AI 創作", "安全教育", "成果發表"]
+            },
+            en: {
+                radarLabels: ["Design Thinking", "AI Application", "Drone Ops", "English Comm", "Global Awareness"],
+                radarLabel: "Skill Growth",
+                doughnutLabels: ["Hands-on", "Group Discussion", "AI Creation", "Safety Edu", "Presentation"]
+            },
+            jp: {
+                radarLabels: ["デザイン思考", "AI活用", "ドローン操作", "英語力", "グローバル意識"],
+                radarLabel: "スキル向上",
+                doughnutLabels: ["実技体験", "グループ討議", "AI制作", "安全教育", "発表"]
+            }
+        };
+
+        function initCharts(lang) {
+            const ctxRadar = document.getElementById('competencyChart').getContext('2d');
+            const ctxDoughnut = document.getElementById('curriculumChart').getContext('2d');
+            
+            // Common styles
+            Chart.defaults.font.family = "'Inter', 'Noto Sans TC', sans-serif";
+            Chart.defaults.color = '#64748b';
+
+            // Radar Chart
+            competencyChartInstance = new Chart(ctxRadar, {
+                type: 'radar',
+                data: {
+                    labels: chartData[lang].radarLabels,
+                    datasets: [{
+                        label: chartData[lang].radarLabel,
+                        data: [85, 90, 75, 80, 88], // Hypothetical growth data
+                        fill: true,
+                        backgroundColor: 'rgba(59, 130, 246, 0.2)',
+                        borderColor: 'rgb(59, 130, 246)',
+                        pointBackgroundColor: 'rgb(59, 130, 246)',
+                        pointBorderColor: '#fff',
+                        pointHoverBackgroundColor: '#fff',
+                        pointHoverBorderColor: 'rgb(59, 130, 246)'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        r: {
+                            angleLines: { color: '#e2e8f0' },
+                            grid: { color: '#e2e8f0' },
+                            suggestedMin: 0,
+                            suggestedMax: 100,
+                            ticks: { display: false } // Hide numbers for cleaner look
+                        }
+                    },
+                    plugins: {
+                        legend: { display: false }
+                    }
+                }
+            });
+
+            // Doughnut Chart
+            curriculumChartInstance = new Chart(ctxDoughnut, {
+                type: 'doughnut',
+                data: {
+                    labels: chartData[lang].doughnutLabels,
+                    datasets: [{
+                        data: [30, 25, 20, 10, 15], // Time allocation estimate
+                        backgroundColor: [
+                            '#3b82f6', // Blue (Hands-on)
+                            '#f97316', // Orange (Discussion)
+                            '#a855f7', // Purple (AI)
+                            '#22c55e', // Green (Safety)
+                            '#64748b'  // Slate (Presentation)
+                        ],
+                        borderWidth: 0,
+                        hoverOffset: 4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: { usePointStyle: true, padding: 20 }
+                        }
+                    }
+                }
+            });
+        }
+
+        function updateCharts(lang) {
+            if(!competencyChartInstance || !curriculumChartInstance) return;
+
+            // Update Radar
+            competencyChartInstance.data.labels = chartData[lang].radarLabels;
+            competencyChartInstance.data.datasets[0].label = chartData[lang].radarLabel;
+            competencyChartInstance.update();
+
+            // Update Doughnut
+            curriculumChartInstance.data.labels = chartData[lang].doughnutLabels;
+            curriculumChartInstance.update();
+        }
+
+        // --- 3. Language & UI Logic ---
+        let currentLang = 'zh'; // Default
+
+        function setLang(lang) {
+            currentLang = lang;
+            
+            // 1. Update Buttons
+            ['zh', 'en', 'jp'].forEach(l => {
+                const btn = document.getElementById(`btn-${l}`);
+                if(btn) {
+                    if (l === lang) {
+                        btn.classList.add('bg-blue-600', 'text-white', 'shadow-sm');
+                        btn.classList.remove('text-gray-600', 'hover:bg-gray-100');
+                    } else {
+                        btn.classList.remove('bg-blue-600', 'text-white', 'shadow-sm');
+                        btn.classList.add('text-gray-600', 'hover:bg-gray-100');
+                    }
+                }
+            });
+
+            // 2. Update Text Content
+            document.querySelectorAll('[data-key]').forEach(el => {
+                const key = el.getAttribute('data-key');
+                if (content[lang][key]) {
+                    // Add fade effect
+                    el.classList.add('opacity-0');
+                    setTimeout(() => {
+                        el.textContent = content[lang][key];
+                        el.classList.remove('opacity-0');
+                    }, 200);
+                }
+            });
+            
+            // Wait for transition before removing opacity class
+            setTimeout(() => {
+                document.querySelectorAll('[data-key]').forEach(el => el.classList.remove('opacity-0'));
+            }, 500);
+
+            // 3. Update Charts
+            updateCharts(lang);
+            
+            // 4. Update Document Language
+            document.documentElement.lang = lang === 'jp' ? 'ja' : (lang === 'zh' ? 'zh-TW' : 'en');
+        }
+
+        // Tab Switching Logic
+        function switchTab(day) {
+            // Buttons
+            const btn1 = document.getElementById('tab-day1');
+            const btn2 = document.getElementById('tab-day2');
+            
+            // Content
+            const content1 = document.getElementById('content-day1');
+            const content2 = document.getElementById('content-day2');
+
+            if (day === 'day1') {
+                btn1.classList.replace('text-gray-500', 'text-blue-600');
+                btn1.classList.add('bg-white', 'shadow-sm');
+                btn1.classList.remove('hover:text-gray-700');
+                
+                btn2.classList.replace('text-blue-600', 'text-gray-500');
+                btn2.classList.remove('bg-white', 'shadow-sm');
+                btn2.classList.add('hover:text-gray-700');
+
+                content1.classList.remove('hidden');
+                content2.classList.add('hidden');
+            } else {
+                btn2.classList.replace('text-gray-500', 'text-blue-600');
+                btn2.classList.add('bg-white', 'shadow-sm');
+                btn2.classList.remove('hover:text-gray-700');
+
+                btn1.classList.replace('text-blue-600', 'text-gray-500');
+                btn1.classList.remove('bg-white', 'shadow-sm');
+                btn1.classList.add('hover:text-gray-700');
+
+                content2.classList.remove('hidden');
+                content1.classList.add('hidden');
+            }
+        }
+
+        // FAQ Logic
+        function toggleFaq(id) {
+            const content = document.getElementById(`faq-${id}`);
+            const icon = document.getElementById(`icon-faq-${id}`);
+            
+            if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+                content.style.maxHeight = '0px';
+                content.classList.remove('active');
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                content.classList.add('active');
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+
+        // Mobile Menu
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        }
+
+        // Initialize
+        window.addEventListener('DOMContentLoaded', () => {
+            // Apply text transition class
+            document.querySelectorAll('[data-key]').forEach(el => el.classList.add('transition-fade'));
+            
+            // Initialize with Chinese
+            setLang('zh');
+            initCharts('zh');
+        });
+
+    </script>
+
+</body></html>
